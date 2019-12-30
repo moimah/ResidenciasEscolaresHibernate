@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="15.0" layoutY="39.0" prefHeight="27.0" prefWidth="614.0" AnchorPane.bottomAnchor="411.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="364.0" text="Gestión de estancias escolares" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="28.0" layoutY="107.0" prefHeight="286.0" prefWidth="614.0" spacing="5.0" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="107.0">
+         <children>
+            <VBox maxWidth="200.0" prefWidth="106.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" text="Universidades" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="listUniversidades" prefHeight="261.0" prefWidth="98.0" VBox.vgrow="SOMETIMES" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbox_residencias" maxWidth="200.0" prefWidth="106.0" visible="false" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" text="Residencias" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="listResidencias" prefHeight="261.0" prefWidth="98.0" VBox.vgrow="SOMETIMES" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbox_estancias" prefWidth="140.0" visible="false" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" text="Estancias" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableEstancias" maxWidth="1.7976931348623157E308" prefHeight="261.0" prefWidth="140.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="columFechaInicio" prefWidth="45.0" text="Inicio" />
+                        <TableColumn fx:id="columnFechaFin" prefWidth="34.0" text="Fin" />
+                        <TableColumn fx:id="columnPrecioPagado" prefWidth="77.0" text="Pagado" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox fx:id="vbox_estudiante" prefHeight="286.0" prefWidth="140.0" visible="false" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" text="Estudiante" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableEstudiante" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="140.0" VBox.vgrow="NEVER">
+                     <columns>
+                        <TableColumn fx:id="columnNombreEstudiante" prefWidth="68.0" text="Nombre" />
+                        <TableColumn fx:id="columnDNI" prefWidth="47.0" text="DNI" />
+                        <TableColumn fx:id="columnTelefono" prefWidth="34.0" text="Teléfono" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

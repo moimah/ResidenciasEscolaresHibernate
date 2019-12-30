@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import moimah.javafx.textdecimal.TextDecimal?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="27.0" layoutY="26.0" text="Código estancia" />
+      <Label layoutX="27.0" layoutY="63.0" text="Fecha inicio" />
+      <ComboBox fx:id="comboEstudiante" layoutX="148.0" layoutY="124.0" prefHeight="25.0" prefWidth="190.0" promptText="Seleccione un estudiante" />
+      <Label layoutX="27.0" layoutY="128.0" text="Estudiante" />
+      <TextDecimal fx:id="txtCodEstancia" layoutX="148.0" layoutY="22.0" prefHeight="25.0" prefWidth="190.0" />
+      <ComboBox fx:id="comboResidencia" layoutX="148.0" layoutY="159.0" prefHeight="25.0" prefWidth="190.0" promptText="Seleccione una residencia" />
+      <Label layoutX="28.0" layoutY="163.0" text="Residencia" />
+      <DatePicker fx:id="dateFechaInicio" layoutX="148.0" layoutY="56.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="27.0" layoutY="96.0" text="Fecha fin" />
+      <DatePicker fx:id="dateFechaFin" layoutX="148.0" layoutY="90.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="27.0" layoutY="198.0" text="Precio" />
+      <TextDecimal fx:id="txtPrecio" layoutX="148.0" layoutY="195.0" prefHeight="25.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>
