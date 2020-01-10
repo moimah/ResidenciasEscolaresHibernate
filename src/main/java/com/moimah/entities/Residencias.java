@@ -56,7 +56,7 @@ public class Residencias implements java.io.Serializable {
 		this.codResidencia = codResidencia;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name = "codUniversidad")
 	public Universidades getUniversidades() {
 		return this.universidades;
